@@ -10,18 +10,18 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <style>
-         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
 </head>
 
-<body class="bg-black">
+<body class="bg-black ">
+
     <!-- Header Section -->
-    <header class="relative w-full mx-auto px-4 sm:px-6 lg:px-8 py-5 sticky top-0 bg-black ">
+    <header class="w-full mx-auto px-4 sm:px-6 lg:px-8 py-5 sticky top-0 bg-black z-50 ">
         <div class="flex items-center justify-between">
             <!-- Logo Section -->
             <div class="flex-shrink-0">
-                <a href="#" class="text-2xl font-bold text-yellow-400">AGBOTCHAN <span class="hidden lg:inline">
-                        Daniel</span> <span class="hidden md:inline">Cédric</span></a>
+                <a href="#" class="text-2xl font-bold text-yellow-400">AGBOTCHAN</a>
             </div>
 
             <!-- Navigation Menu -->
@@ -57,7 +57,7 @@
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="absolute w-full z-index-50 md:hidden mt-5 p-6 hidden space-y-4 text-slate-100 bg-black">
+        <div id="mobile-menu" class="absolute w-full md:hidden p-5 p-6 hidden space-y-4 text-slate-100 bg-black">
             <a href="#" class="block text-lg bg-white/10  rounded px-4">Réalisations</a>
             <a href="#services" class="block text-lg  bg-white/10  rounded px-4 transition-all">Services</a>
             <a href="#about" class="block text-lg bg-white/10  rounded px-4  transition-all">Compétences</a>
@@ -67,39 +67,34 @@
         </div>
     </header>
 
-
-    <!--Main section-->
-    <main class="">
-        <section class="">
-            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 gap-4 md:grid-cols-4 md:items-center md:gap-8">
-                    <div class="md:col-span-2 ">
-                        <img src="photo.jpg" class="rounded" alt="" />
-                    </div>
-
-                    <div class="md:col-span-2 text-slate-400">
-                        <div class="max-w-lg md:max-w-none bg-white/10 p-6 rounded-lg">
-                            <h2 class="text-2xl font-semibold text-slate-100 sm:text-3xl">
-                                Statisticien Analyste de données
-                            </h2>
-
-                            <p class="mt-4 text-justify">
-                                Je suis <span class="text-yellow-400">AGBOTCHAN Mahugnon Daniel Cédric</span> en fin de
-                                formation du cycle de Licence Professionnelle en Statistique Appliquée. Ma passion pour
-                                l’analyse de données et la modélisation
-                                statistique m’a conduit à développer une expertise dans le traitement, l’exploration et
-                                l’interprétation des données afin d’aider à la prise de décision éclairée.
-                            </p>
-                            <p class="mt-4 text-justify">
-                                Dans un monde où la donnée est devenue un levier stratégique incontournable,
-                                j’accompagne
-                                les étudiants, chercheurs et entreprises à structurer, analyser et valoriser leurs
-                                données
-                                pour en extraire des insights pertinents. Mon objectif ? Transformer des chiffres bruts
-                                en
-                                indicateurs clés pour guider les stratégies et optimiser les performances.
-                            </p>
-                        </div>
+    <main class="bg-black h-auto">
+        <section class="w-full h-auto overflow-hidden">
+            <div class="lg:px-16 xs:px-4 xs:py-10 sm:py-10 px-8 py-1 pb-4 h-full flex items-center text-white">
+                <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="flex flex-col z-10 w-full">
+                        <h1 class="xl:text-5xl sm:text-3xl xs:text-3xl font-semibold font-serif mt-2">
+                            AGBOTCHAN Mahugnon Daniel Cédric
+                        </h1>
+                        <h4
+                            class="text-yellow-300 mt-4 xl:text-4xl sm:text-xl xs:text-xl font-semibold font-serif mt-2">
+                            Statisticien Analyste de données
+                        </h4>
+                        <p class="lg:w-[70%] xs:w-full text-slate-400 text-md mt-4 xl:text-xl text-justify">
+                            En fin de
+                            formation du cycle de Licence Professionnelle en Statistique Appliquée, ma passion pour
+                            l’analyse de données et la modélisation
+                            statistique m’a conduit à développer une expertise dans le traitement, l’exploration et
+                            l’interprétation des données afin d’aider à la prise de décision éclairée.
+                        </p>
+                        <p class="lg:w-[70%] xs:w-full text-slate-400 text-md mt-4 xl:text-xl text-justify">
+                            Dans un monde où la donnée est devenue un levier stratégique incontournable,
+                            j’accompagne
+                            les étudiants, chercheurs et entreprises à structurer, analyser et valoriser leurs
+                            données
+                            pour en extraire des insights pertinents. Mon objectif ? Transformer des chiffres bruts
+                            en
+                            indicateurs clés pour guider les stratégies et optimiser les performances.
+                        </p>
                         <div class="text-5xl m-4 ">
                             <ul class="flex space-x-10">
 
@@ -111,203 +106,192 @@
                                             class="fa-brands fa-facebook bg-white text-blue-600 rounded-full text-center"></i></a>
                                 </li>
                                 <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-download"></i><span>CV</span></a></li>
                             </ul>
                         </div>
 
                     </div>
+
+                    <div class="flex justify-center items-center">
+                        <div class="relative rounded-lg shadow-lg overflow-hidden">
+                            <img className="w-full h-auto" src="i.jpg" alt="Incognito Image" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-
-        <!--Experience-->
-
-        <section id="#services" class="">
-            <div class="flex justify-center my-4">
-                <div class="w-fit ">
-                    <h2 class="text-2xl font-bold text-white pb-2">Expériences</h2>
-                    <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
-                        <hr class="border-[3px] border-yellow-400 w-[100%]" />
-                    </div>
-                </div>
-            </div>
-            <div id="about" class="max-w-4xl mx-auto px-10 text-slate-400">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mt-6">
-                    <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
-                        <i class="fa-solid fa-building text-yellow-400 text-3xl mr-8"></i>
-                        <p>Stage chez <span class="text-yellow-400 text-lg font-bold">DD-Project Consulting</span> , un
-                            cabinet spécialisé en analyse de données, où j’ai acquis une solide expérience dans le
-                            traitement et l’exploitation des données pour divers projets.
-                        </p>
-                    </div>
-                    <div class="p-4 bg-white/10 rounded-lg flex items-center space-x-3">
-                        <i class="fa-solid fa-user-friends text-yellow-400 text-3xl mr-8"></i>
-                        <p>Accompagnement de plusieurs étudiants et chercheurs dans l’analyse de leurs données, avec des
-                            livrables clairs et exploitables.</p>
-                    </div>
-                </div>
-        </section>
-
-
-        <!--Service Proposés-->
-        <section id="#services" class="">
-            <div class="flex justify-center my-4">
-                <div class="w-fit ">
-                    <h2 class="text-2xl font-bold text-white pb-2">Services Proposés</h2>
-                    <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
-                        <hr class="border-[3px] border-yellow-400 w-[100%]" />
-                    </div>
-                </div>
-            </div>
-            <div id="about" class="max-w-4xl mx-auto px-10 text-slate-400">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mt-6">
-                    <div class="p-4 bg-white/10 rounded-lg  flex items-center space-x-3">
-                        <i class="fa-solid fa-chart-line text-yellow-400 text-3xl"></i>
-                        <p>Nettoyage, traitement et analyse des données</p>
-                    </div>
-                    <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
-                        <i class="fa-solid fa-chart-bar text-yellow-400 text-3xl"></i>
-                        <p>Régressions, tests statistiques, ACP, visualisation</p>
-                    </div>
-                    <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
-                        <i class="fa-solid fa-file-alt text-yellow-400 text-3xl"></i>
-                        <p>Rédaction de rapports détaillés</p>
-                    </div>
-                    <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
-                        <i class="fa-solid fa-user-graduate text-yellow-400 text-3xl"></i>
-                        <p>Accompagnement personnalisé pour étudiants et chercheurs</p>
-                    </div>
-                </div>
-
-        </section>
-
-
-        <!--slide-->
-        <section class="flex justify-center z-index-0">
-            <div>
+        <!--experience and services-->
+        <section
+            class="grid grid-cols-1 gap-1 lg:grid-cols-2 lg:gap-8 m-4 text-slate-400 text-md xl:text-md text-justify">
+            <!--Experience-->
+            <div class="h-auto rounded-lg">
                 <div class="flex justify-center my-4">
                     <div class="w-fit ">
-                        <h2 class="text-2xl font-bold text-white pb-2"> Outils maîtrisés</h2>
+                        <h2 class="text-2xl font-bold text-white pb-2">Expériences</h2>
                         <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
                             <hr class="border-[3px] border-yellow-400 w-[100%]" />
                         </div>
                     </div>
                 </div>
+                <div id="about" class="max-w-4xl mx-auto px-10 text-slate-400">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mt-6">
+                        <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
+                            <i class="fa-solid fa-building text-yellow-400 text-3xl mr-8"></i>
+                            <p>Stage chez <span class="text-yellow-400 text-lg font-bold">DD-Project Consulting</span> ,
+                                un
+                                cabinet spécialisé en analyse de données, où j’ai acquis une solide expérience dans le
+                                traitement et l’exploitation des données pour divers projets.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-white/10 rounded-lg flex items-center space-x-3">
+                            <i class="fa-solid fa-user-friends text-yellow-400 text-3xl mr-8"></i>
+                            <p>Accompagnement de plusieurs étudiants et chercheurs dans l’analyse de leurs données, avec
+                                des
+                                livrables clairs et exploitables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <div x-data="carousel()" class="relative w-full max-w-2xl overflow-hidden rounded-lg shadow-lg"
-                    @mouseenter="pauseAutoPlay" @mouseleave="resumeAutoPlay">
+            <!--Service Proposés-->
+            <div class="h-auto rounded-lg">
+                <div class="flex justify-center my-4">
+                    <div class="w-fit ">
+                        <h2 class="text-2xl font-bold text-white pb-2">Services Proposés</h2>
+                        <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                            <hr class="border-[3px] border-yellow-400 w-[100%]" />
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="max-w-4xl mx-auto px-10 text-slate-400">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mt-6">
+                        <div class="p-4 bg-white/10 rounded-lg  flex items-center space-x-3">
+                            <i class="fa-solid fa-chart-line text-yellow-400 text-3xl"></i>
+                            <p>Nettoyage, traitement et analyse des données</p>
+                        </div>
+                        <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
+                            <i class="fa-solid fa-chart-bar text-yellow-400 text-3xl"></i>
+                            <p>Régressions, tests statistiques, ACP, visualisation</p>
+                        </div>
+                        <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
+                            <i class="fa-solid fa-file-alt text-yellow-400 text-3xl"></i>
+                            <p>Rédaction de rapports détaillés</p>
+                        </div>
+                        <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
+                            <i class="fa-solid fa-user-graduate text-yellow-400 text-3xl"></i>
+                            <p>Accompagnement personnalisé pour étudiants et chercheurs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <!-- Slides -->
-                    <div class="relative w-full h-80 flex overflow-hidden bg-black ">
-                        <div class="flex w-full transition-transform duration-500 ease-in-out"
-                            :style="'transform: translateX(' + (-currentIndex * 100) + '%)'">
+        </section>
 
-                            <template x-for="(slide, index) in slides" :key="index">
-                                <div class="w-full flex-shrink-0 flex flex-col justify-center  items-center">
-                                    <i :class="slide.icon" class="text-6xl text-yellow-400 mt-2"></i>
-                                    <p class="text-gray-400 text-2xl font-bold text-slate-100 text-center"
-                                        x-text="slide.title"></p>
-                                    <p class="text-gray-400 text-lg text-justify mt-6 p-4" x-text="slide.description">
-                                    </p>
-                                </div>
-                            </template>
+
+        <!--tools and why-->
+        <section class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 m-4">
+            <!--tools-->
+            <div class="h-auto rounded-lg">
+                <div>
+                    <div class="flex justify-center my-4">
+                        <div class="w-fit ">
+                            <h2 class="text-2xl font-bold text-white pb-2"> Outils maîtrisés</h2>
+                            <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                                <hr class="border-[3px] border-yellow-400 w-[100%]" />
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Navigation -->
-                    <button @click="prevSlide()"
-                        class="absolute left-0 top-1/3 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full shadow">
-                        <i class="fas fa-chevron-left text-white"></i>
-                    </button>
-                    <button @click="nextSlide()"
-                        class="absolute right-0 top-1/3 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full shadow">
-                        <i class="fas fa-chevron-right text-white"></i>
-                    </button>
+                    <div x-data="carousel()" class="relative w-full max-w-2xl overflow-hidden rounded-lg shadow-lg"
+                        @mouseenter="pauseAutoPlay" @mouseleave="resumeAutoPlay">
+
+                        <!-- Slides -->
+                        <div class="relative w-full h-80 flex  bg-white/10 ">
+                            <div class="flex w-full transition-transform duration-500 ease-in-out"
+                                :style="'transform: translateX(' + (-currentIndex * 100) + '%)'">
+
+                                <template x-for="(slide, index) in slides" :key="index">
+                                    <div
+                                        class="w-full flex-shrink-0 flex flex-col justify-center  items-center text-slate-400 text-md xl:text-md text-justify">
+                                        <i :class="slide.icon" class="text-6xl text-yellow-400 mt-2"></i>
+                                        <p class="text-center" x-text="slide.title"></p>
+                                        <p class=" mt-6 p-4" x-text="slide.description">
+                                        </p>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <!-- Navigation -->
+                        <button @click="prevSlide()"
+                            class="absolute left-0 top-1/3 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full shadow cursor-pointer">
+                            <i class="fas fa-chevron-left text-white"></i>
+                        </button>
+                        <button @click="nextSlide()"
+                            class="absolute right-0 top-1/3 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full shadow cursor-pointer">
+                            <i class="fas fa-chevron-right text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--why-->
+            <div class="h-auto rounded-lg">
+                <div class="p-5 pt-8  my-4 ">
+                    <div class="flex justify-center my-4">
+                        <div class="w-fit ">
+                            <h2 class="text-2xl font-bold text-white pb-2"> Pourquoi me choisir ?</h2>
+                            <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                                <hr class="border-[3px] border-yellow-400 w-[100%]" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-5xl mx-auto">
+                        <div
+                            class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 text-slate-400 text-md xl:text-md text-justify">
+                            <div
+                                class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border  bg-white/10 group">
+                                <div
+                                    class="flex items-center justify-between w-full mb-4 text-yellow-400 font-bold text-xl">
+                                    Expertise
+                                </div>
+                                <span class="relative ">
+                                    Analyse précise des données avec
+                                    des logiciels avancés pour meilleures décisions.
+                                </span>
+                            </div>
+
+                            <div
+                                class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border  bg-white/10 group">
+                                <div
+                                    class="flex items-center justify-between w-full mb-4 text-yellow-400 font-bold text-xl">
+                                    Méthode
+                                </div>
+                                <span class="relative ">
+                                    Analyse structurée des données avec précision pour des résultats optimaux.
+                                </span>
+                            </div>
+
+                            <div
+                                class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border  bg-white/10 group">
+                                <div
+                                    class="flex items-center justify-between w-full mb-4 text-yellow-400 font-bold text-xl">
+                                    Efficacité
+                                </div>
+                                <span class="relative ">
+                                    Solutions sur mesure avec rapports détaillés et structurés pour chaque projet.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <!--why-->
-        <section class="p-5 pt-8 border ignore border-gray-200 not-prose relative ">
-            <div
-                class="absolute w-auto rounded-b-lg border-b uppercase -translate-y-px tracking-wide leading-none border-l border-r border-gray-200 shadow-sm top-0 left-1/2 -translate-x-1/2 px-3 pt-1 pb-2 bg-white text-gray-400 text-[0.65rem]">
-                🤩 Our Amazing Sponsors 👇</div>
-            <div class="max-w-5xl mx-auto">
-                <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 not-prose">
-                    <a href="#" target="_blank"
-                        class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border border-gray-200 bg-white group">
-                        <span
-                            class="absolute w-full h-full bg-white inset-0 group-hover:bg-gray-50 group-hover:bg-opacity-30"></span>
-                        <div class="flex items-center justify-between w-full mb-4 ">
-                            <img src="https://cdn.devdojo.com/sponsors/digital-ocean.svg" alt="DigitalOcean"
-                                class="relative h-5 md:h-6">
-                            <span
-                                class="opacity-0 -translate-x-2 flex-shrink-0 group-hover:translate-x-0 py-1 px-2.5 text-[0.6rem] group-hover:opacity-100 transition-all ease-out duration-200 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center">
-                                <span>View Website</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="w-3 translate-x-0.5 h-3">
-                                    <path fill-rule="evenodd"
-                                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </span>
-                        </div>
-                        <span class="relative text-xs md:text-sm text-gray-600">DigitalOcean offers a
-                            simple and reliable cloud hosting solution that enables developers to get their website or
-                            application up and running quickly.</span>
-                    </a>
-                    <a href="#" target="_blank"
-                        class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border border-gray-200 bg-white group">
-                        <span
-                            class="absolute w-full h-full bg-white inset-0 group-hover:bg-gray-50 group-hover:bg-opacity-30"></span>
-                        <div class="flex items-center justify-between w-full mb-4 ">
-                            <img src="https://cdn.devdojo.com/sponsors/larajobs.svg" alt="Larajobs"
-                                class="relative h-5 md:h-6">
-                            <span
-                                class="opacity-0 -translate-x-2 flex-shrink-0 group-hover:translate-x-0 py-1 px-2.5 text-[0.6rem] group-hover:opacity-100 transition-all ease-out duration-200 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center">
-                                <span>View Website</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="w-3 translate-x-0.5 h-3">
-                                    <path fill-rule="evenodd"
-                                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </span>
-                        </div>
-                        <span class="relative text-xs md:text-sm text-gray-600">The official Laravel
-                            job board. Find the best and most talented Laravel developers by posting your job on the
-                            official Laravel job board.</span>
-                    </a>
-                    <a href="#" target="_blank"
-                        class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border border-gray-200 bg-white group">
-                        <span
-                            class="absolute w-full h-full bg-white inset-0 group-hover:bg-gray-50 group-hover:bg-opacity-30"></span>
-                        <div class="flex items-center justify-between w-full mb-4 ">
-                            <img src="https://cdn.devdojo.com/sponsors/coin-camp.svg" alt="CoinCamp"
-                                class="relative h-5 md:h-6">
-                            <span
-                                class="opacity-0 -translate-x-2 flex-shrink-0 group-hover:translate-x-0 py-1 px-2.5 text-[0.6rem] group-hover:opacity-100 transition-all ease-out duration-200 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center">
-                                <span>View Website</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="w-3 translate-x-0.5 h-3">
-                                    <path fill-rule="evenodd"
-                                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </span>
-                        </div>
-                        <span class="relative text-xs md:text-sm text-gray-600">Learn how to code
-                            your own blockchain and create your own crypto-currency with the CoinCamp interactive and
-                            fun online training platform.</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
     </main>
 
 
-    <footer class="w-full mt-10 border-t-2 pt-4 pb-8 border-gray-500">
+    <footer class="w-full mt-10 border-t-2 pt-4 border-gray-500 bg-black ">
         <div class="flex sm:flex-row flex-col sm:justify-between items-center md:px-20 px-4">
             <div class="flex gap-4 items-center sm:text-xl text-sm text-gray-500">
                 <a href="" class="hover:text-yellow-400">Facebook</a>
@@ -357,8 +341,8 @@
                 }
             };
         }
-    </script>
 
+    </script>
 </body>
 
 </html>
