@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGBOTCHAN Mahugnon Daniel Cédric</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body class="bg-black">
+
+    <!-- Header Section -->
+    <header class="w-full mx-auto px-4 sm:px-6 lg:px-8 py-5 sticky top-0 bg-black z-50 ">
+        <div class="flex items-center justify-between">
+            <!-- Logo Section -->
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold text-yellow-400">AGBOTCHAN</a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex space-x-10 text-lg">
+                <a href="#experience"
+                    class="text-white hover:bg-yellow-400 bg-white/10  hover:text-black text-black py-2 px-6 rounded-full text-lg transition-all">Expériences</a>
+                <a href="#services"
+                    class="text-white hover:bg-yellow-400 bg-white/10  hover:text-black text-black py-2 px-6 rounded-full text-lg transition-all">Services</a>
+                <a href="#about"
+                    class="text-white hover:bg-yellow-400 bg-white/10  hover:text-black text-black py-2 px-6 rounded-full text-lg transition-all">Compétences</a>
+                <a href="#about"
+                    class="text-white hover:bg-yellow-400 bg-white/10  hover:text-black text-black py-2 px-6 rounded-full text-lg transition-all">Formations</a>
+            </nav>
+
+            <!-- Call-to-Action Button -->
+            <div class="hidden md:block">
+                <a href="#contact"
+                    class="bg-yellow-500 hover:bg-yellow-400 text-black py-2 px-6 rounded-full text-lg transition-all">
+                    Contact
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button (for smaller screens) -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-button" class="text-yellow-400 focus:outline-none cursor-pointer">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="absolute w-full md:hidden p-5 p-6 hidden space-y-4 text-slate-100 bg-black">
+            <a href="#" class="block text-lg bg-white/10  rounded px-4">Réalisations</a>
+            <a href="#services" class="block text-lg  bg-white/10  rounded px-4 transition-all">Services</a>
+            <a href="#about" class="block text-lg bg-white/10  rounded px-4  transition-all">Compétences</a>
+            <a href="#contact" class="block text-lg bg-white/10  rounded px-4  transition-all">Formations</a>
+            <a href="#contact" class="block text-lg bg-white/10  rounded px-4  transition-all">Contact</a>
+        </div>
+        </div>
+    </header>
+
+    <main class="bg-black ">
+        <section class="w-full h-auto overflow-hidden">
+            <div class="lg:px-16 xs:px-4 xs:py-10 sm:py-10 px-8 py-1 pb-4 h-full flex items-center text-white">
+                <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="flex flex-col z-10 w-full">
+                        <h1 class="xl:text-5xl sm:text-3xl xs:text-3xl font-semibold font-serif mt-2">
+                            AGBOTCHAN Mahugnon Daniel Cédric
+                        </h1>
+                        <h4
+                            class="text-yellow-300 mt-4 xl:text-4xl sm:text-xl xs:text-xl font-semibold font-serif mt-2">
+                            Statisticien Analyste de données
+                        </h4>
+                        <p class="lg:w-[70%] xs:w-full text-slate-400 text-md mt-4 xl:text-xl text-justify">
+                            En fin de
+                            formation du cycle de Licence Professionnelle en Statistique Appliquée, ma passion pour
+                            l’analyse de données et la modélisation
+                            statistique m’a conduit à développer une expertise dans le traitement, l’exploration et
+                            l’interprétation des données afin d’aider à la prise de décision éclairée.
+                        </p>
+                        <p class="lg:w-[70%] xs:w-full text-slate-400 text-md mt-4 xl:text-xl text-justify">
+                            Dans un monde où la donnée est devenue un levier stratégique incontournable,
+                            j’accompagne
+                            les étudiants, chercheurs et entreprises à structurer, analyser et valoriser leurs
+                            données
+                            pour en extraire des insights pertinents. Mon objectif ? Transformer des chiffres bruts
+                            en
+                            indicateurs clés pour guider les stratégies et optimiser les performances.
+                        </p>
+                        <div class="text-5xl m-4 ">
+                            <ul class="flex space-x-10">
+
+                                <li><a href=""><img
+                                            src="https://img.icons8.com/?size=100&id=mXcvtsj8e1Ug&format=png&color=000000"
+                                            class="h-13 w-14" alt=""></a></li>
+                                <li><a href=""><i class="fa-brands fa-square-whatsapp text-yellow-400"></i></a></li>
+                                <li><a href="" class=""><i
+                                            class="fa-brands fa-facebook bg-white text-blue-600 rounded-full text-center"></i></a>
+                                </li>
+                                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="flex justify-center items-center">
+                        <div class="relative rounded-lg shadow-lg overflow-hidden">
+                            <img className="w-full h-auto"
+                                src="https://images.unsplash.com/photo-1632255658480-3546119b5ec2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxNXx8cG9ydGZvbGlvfGVufDB8MXx8fDE3MzczNzQxMDd8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                                alt="Incognito Image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--experience and services-->
+        <section
+            class="grid grid-cols-1 gap-1 lg:grid-cols-2 lg:gap-8 m-4 text-slate-400 text-md xl:text-md text-justify">
+            <!--Experience-->
+            <div class="h-auto rounded-lg">
+                <div class="flex justify-center my-4">
+                    <div class="w-fit ">
+                        <h2 class="text-2xl font-bold text-white pb-2">Expériences</h2>
+                        <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                            <hr class="border-[3px] border-yellow-400 w-[100%]" />
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="max-w-4xl mx-auto px-10 text-slate-400">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mt-6">
+                        <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
+                            <i class="fa-solid fa-building text-yellow-400 text-3xl mr-8"></i>
+                            <p>Stage chez <span class="text-yellow-400 text-lg font-bold">DD-Project Consulting</span> ,
+                                un
+                                cabinet spécialisé en analyse de données, où j’ai acquis une solide expérience dans le
+                                traitement et l’exploitation des données pour divers projets.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-white/10 rounded-lg flex items-center space-x-3">
+                            <i class="fa-solid fa-user-friends text-yellow-400 text-3xl mr-8"></i>
+                            <p>Accompagnement de plusieurs étudiants et chercheurs dans l’analyse de leurs données, avec
+                                des
+                                livrables clairs et exploitables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Service Proposés-->
+            <div class="h-auto rounded-lg">
+                <div class="flex justify-center my-4">
+                    <div class="w-fit ">
+                        <h2 class="text-2xl font-bold text-white pb-2">Services Proposés</h2>
+                        <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                            <hr class="border-[3px] border-yellow-400 w-[100%]" />
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="max-w-4xl mx-auto px-10 text-slate-400">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mt-6">
+                        <div class="p-4 bg-white/10 rounded-lg  flex items-center space-x-3">
+                            <i class="fa-solid fa-chart-line text-yellow-400 text-3xl"></i>
+                            <p>Nettoyage, traitement et analyse des données</p>
+                        </div>
+                        <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
+                            <i class="fa-solid fa-chart-bar text-yellow-400 text-3xl"></i>
+                            <p>Régressions, tests statistiques, ACP, visualisation</p>
+                        </div>
+                        <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
+                            <i class="fa-solid fa-file-alt text-yellow-400 text-3xl"></i>
+                            <p>Rédaction de rapports détaillés</p>
+                        </div>
+                        <div class="p-4 bg-white/10  rounded-lg  flex items-center space-x-3">
+                            <i class="fa-solid fa-user-graduate text-yellow-400 text-3xl"></i>
+                            <p>Accompagnement personnalisé pour étudiants et chercheurs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--tools and why-->
+        <div class="grid grid-cols-1 gap-1 m-4 lg:grid-cols-2 lg:gap-8">
+            <!--tools-->
+            <div class="h-32 rounded-lg">
+                <div>
+                    <div class="flex justify-center my-4">
+                        <div class="w-fit ">
+                            <h2 class="text-2xl font-bold text-white pb-2"> Outils maîtrisés</h2>
+                            <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                                <hr class="border-[3px] border-yellow-400 w-[100%]" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div x-data="carousel()" class="relative w-full max-w-2xl overflow-hidden rounded-lg shadow-lg"
+                        @mouseenter="pauseAutoPlay" @mouseleave="resumeAutoPlay">
+
+                        <!-- Slides -->
+                        <div class="relative w-full h-80 flex overflow-hidden bg-white/10 ">
+                            <div class="flex w-full transition-transform duration-500 ease-in-out"
+                                :style="'transform: translateX(' + (-currentIndex * 100) + '%)'">
+
+                                <template x-for="(slide, index) in slides" :key="index">
+                                    <div class="w-full flex-shrink-0 flex flex-col justify-center  items-center">
+                                        <i :class="slide.icon" class="text-6xl text-yellow-400 mt-2"></i>
+                                        <p class="text-gray-400 text-2xl font-bold text-slate-100 text-center"
+                                            x-text="slide.title"></p>
+                                        <p class="text-gray-400 text-lg text-justify mt-6 p-4"
+                                            x-text="slide.description">
+                                        </p>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <!-- Navigation -->
+                        <button @click="prevSlide()"
+                            class="absolute left-0 top-1/3 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full shadow">
+                            <i class="fas fa-chevron-left text-white"></i>
+                        </button>
+                        <button @click="nextSlide()"
+                            class="absolute right-0 top-1/3 transform -translate-y-1/2 bg-gray-800 p-2 rounded-full shadow">
+                            <i class="fas fa-chevron-right text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--why-->
+            <div class="h-32 rounded-lg">
+                <div class="p-5 pt-8 border ignore  not-prose relative my-4 ">
+                    <div class="flex justify-center my-4">
+                        <div class="w-fit ">
+                            <h2 class="text-2xl font-bold text-white pb-2"> Pourquoi me choisir ?</h2>
+                            <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                                <hr class="border-[3px] border-yellow-400 w-[100%]" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-5xl mx-auto">
+                        <div
+                            class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 not-prose">
+                            <div
+                                class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border  bg-white/10 group">
+                                <div
+                                    class="flex items-center justify-between w-full mb-4 text-yellow-400 font-bold text-xl">
+                                    Expertise
+                                </div>
+                                <span class="relative text-xs md:text-sm text-slate-400">
+                                    Analyse précise des données avec
+                                    des logiciels avancés pour meilleures décisions.
+                                </span>
+                            </div>
+
+                            <div
+                                class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border  bg-white/10 group">
+                                <div
+                                    class="flex items-center justify-between w-full mb-4 text-yellow-400 font-bold text-xl">
+                                    Méthode
+                                </div>
+                                <span class="relative text-xs md:text-sm text-slate-400">
+                                    Analyse structurée des données avec précision pour des résultats optimaux.
+                                </span>
+                            </div>
+
+                            <div
+                                class="relative flex flex-col items-start justify-between p-6 overflow-hidden rounded-xl border  bg-white/10 group">
+                                <div
+                                    class="flex items-center justify-between w-full mb-4 text-yellow-400 font-bold text-xl">
+                                    Efficacité
+                                </div>
+                                <span class="relative text-xs md:text-sm text-slate-400">
+                                    Solutions sur mesure avec rapports détaillés et structurés pour chaque projet.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="w-full mt-10 border-t-2 pt-4 pb-8 border-gray-500 relative z-50">
+        <div class="flex sm:flex-row flex-col sm:justify-between items-center md:px-20 px-4">
+            <div class="flex gap-4 items-center sm:text-xl text-sm text-gray-500">
+                <a href="" class="hover:text-yellow-400">Facebook</a>
+                <a href="" class="hover:text-yellow-400">Instagram</a>
+                <a href="" class="hover:text-yellow-400">Linkedin</a>
+            </div>
+            <div class="text-lg text-gray-400">&copy;2024 AGBOTCHAN Cédric</div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function carousel() {
+            return {
+                currentIndex: 0,
+                autoplaySpeed: 4000,
+                autoplay: null,
+                slides: [
+                    { icon: "fas fa-chart-bar", title: "Logiciels d’analyse statistique", description: "L’analyse statistique est essentielle pour extraire des tendances et prendre des décisions éclairées. Grâce à R, Stata, Excel, Epi Info et EpiData, vous pouvez manipuler des données, créer des visualisations et effectuer des tests statistiques avancés. Ces outils sont incontournables pour les chercheurs, analystes et entreprises." },
+                    { icon: "fas fa-database", title: "Outils de collecte de données", description: "Une collecte de données efficace garantit des résultats fiables. Kobo Collect et Epi Info facilitent l’enregistrement et l’analyse des informations sur le terrain. Accessibles via mobile ou ordinateur, ces outils permettent de concevoir des questionnaires, de centraliser les réponses et d’optimiser les enquêtes en temps réel." },
+                    { icon: "fas fa-file-alt", title: "Rédaction et mise en forme", description: "Une bonne mise en forme valorise le contenu. Word et LaTeX sont idéals pour rédiger des rapports, thèses et documents techniques. Word est intuitif pour les mises en page rapides, tandis que LaTeX assure un rendu professionnel pour les documents scientifiques, avec une gestion avancée des références et formules." }
+                ],
+                nextSlide() {
+                    this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+                },
+                prevSlide() {
+                    this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+                },
+                startAutoPlay() {
+                    this.autoplay = setInterval(() => this.nextSlide(), this.autoplaySpeed);
+                },
+                pauseAutoPlay() {
+                    clearInterval(this.autoplay);
+                },
+                resumeAutoPlay() {
+                    this.startAutoPlay();
+                },
+                init() {
+                    this.startAutoPlay();
+                }
+            };
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,8 +1,16 @@
-section{
+*:not(i) {
+
+   
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+section {
     margin-bottom: 20px;
 
 }
 
-#mobile-menu a{
+#mobile-menu a {
     padding: 5px;
 }
